@@ -1,0 +1,90 @@
+{
+  "catalogVersion": "2025.1.1",
+  "updatedAt": "2026-06-06",
+  "sourceEdition": "SBD 2025",
+  "rules": [
+    {
+      "id": "diagnosis.v1",
+      "module": "Diagnóstico e rastreamento",
+      "document": "01_diagnostico_diabetes.pdf",
+      "topic": "Critérios diagnósticos e rastreamento",
+      "version": "1.0",
+      "updatedAt": "2026-06-06",
+      "parameters": {
+        "fastingGlucoseDiabetesMgDl": 126,
+        "hba1cDiabetesPercent": 6.5,
+        "ogtt1hDiabetesMgDl": 209,
+        "ogtt2hDiabetesMgDl": 200,
+        "singleAlteredExamRequiresRepeat": true
+      }
+    },
+    {
+      "id": "targets.v1",
+      "module": "Metas individualizadas",
+      "document": "03_metas_tratamento_diabetes.pdf",
+      "topic": "Metas glicêmicas",
+      "version": "1.0",
+      "updatedAt": "2026-06-06",
+      "parameters": {
+        "generalHba1cTarget": "<7%",
+        "prePrandialMgDl": "80–130",
+        "postPrandial2hMgDl": "<180",
+        "tir70To180Percent": ">70",
+        "timeBelow70Percent": "<4",
+        "timeBelow54Percent": "<1",
+        "glycemicCVPercent": "<36",
+        "pregnancyBlockedInMVP": true
+      }
+    },
+    {
+      "id": "dm2-treatment.v1",
+      "module": "Tratamento do DM2",
+      "document": "04_manejo_dm2.pdf",
+      "topic": "Manejo da terapia antidiabética",
+      "version": "1.0",
+      "updatedAt": "2026-06-06",
+      "parameters": {
+        "initialHbA1cThresholdPercent": 7.5,
+        "requiredPreStrategyData": ["risco CV", "IMC", "HbA1c", "função renal"],
+        "cardiorenalBenefitPriority": true
+      }
+    },
+    {
+      "id": "dm1-insulin.v1",
+      "module": "Insulinoterapia no DM1",
+      "document": "09_insulinoterapia_dm1.pdf",
+      "topic": "Insulinoterapia no DM1",
+      "version": "1.0",
+      "updatedAt": "2026-06-06",
+      "parameters": {
+        "totalDailyDoseUnitsPerKgPerDay": "0.4–1.0",
+        "initialBasalPercent": 50,
+        "initialPrandialPercent": 50,
+        "sensitivityFactorRules": ["2000/DTD", "1800/DTD em adultos conforme diretriz"],
+        "carbohydrateRatioRule": "400/DTD",
+        "neverSuspendBasal": true
+      }
+    },
+    {
+      "id": "dm1-sick-day.v1",
+      "module": "Dias de doença no DM1",
+      "document": "10_dias_de_doenca_dm1.pdf",
+      "topic": "Manejo dos dias de doença no DM1",
+      "version": "1.0",
+      "updatedAt": "2026-06-06",
+      "parameters": {
+        "emergencyTriggers": [
+          "vômitos persistentes >2h",
+          "alteração neurológica",
+          "cetonemia >1,5 mmol/L ou cetonúria alta",
+          "dor abdominal importante",
+          "respiração de Kussmaul",
+          "desidratação",
+          "incapacidade de manter glicemia >70 mg/dL",
+          "criança <5 anos",
+          "família incapaz de acompanhar em domicílio"
+        ]
+      }
+    }
+  ]
+}
